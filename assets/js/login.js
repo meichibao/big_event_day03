@@ -29,7 +29,7 @@ $(function () {
 
             // 注册成功后的操作
             //跳转到登录界面
-        };
+        }
     });
 
     // 用户注册
@@ -58,7 +58,7 @@ $(function () {
                 $("#link_login").click();
                 //清空表单
                 $("#form-reg")[0].reset();
-            };
+            }
         });
     });
 
@@ -83,7 +83,7 @@ $(function () {
                 location.href = '/index.html';
                 //将返回的token身份验证码保存到本地
                 localStorage.setItem('token1', res.token);
-            };
+            }
         });
 
     });
