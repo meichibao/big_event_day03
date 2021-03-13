@@ -25,11 +25,11 @@ $(function () {
             // console.log(frist);
             if (value !== frist) {
                 return '两次输入密码不一致!'
-            }
+            };
 
             // 注册成功后的操作
             //跳转到登录界面
-        }
+        };
     });
 
     // 用户注册
@@ -50,7 +50,7 @@ $(function () {
                 if (res.status !== 0) {
                     //失败状态
                     return layer.msg(res.message, { icon: 5 });
-                }
+                };
 
                 // 成功操作
                 layer.msg(res.message, { icon: 6 });
@@ -58,8 +58,8 @@ $(function () {
                 $("#link_login").click();
                 //清空表单
                 $("#form-reg")[0].reset();
-            }
-        })
+            };
+        });
     });
 
     // 用户登录
@@ -77,15 +77,15 @@ $(function () {
                 if (res.status !== 0) {
                     // 登录失败
                     return layer.msg(res.message, { icon: 5 });
-                }
+                };
                 // 登录成功
                 // 跳转到后台主页
                 location.href = '/index.html';
                 //将返回的token身份验证码保存到本地
                 localStorage.setItem('token1', res.token);
-            }
-        })
+            };
+        });
 
-    })
+    });
 
 });
