@@ -27,3 +27,12 @@ body {
     height: 60px;
     background: url('/assets/images/login_title.png') no-repeat center;
 }
+
+.links {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.layui-form {
+    padding: 0 30px;
+}
