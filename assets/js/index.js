@@ -1,6 +1,20 @@
 $(function () {
     //获取用户基本信息
     gitUserinfo();
+
+    // 退出登录操作
+    $("#btnLogout").on('click', function () {
+
+        layer.confirm('确定退出登录?', { icon: 3, title: '提示' }, function (index) {
+            //do something
+            // 清空本地token
+            localStorage.removeItem('tokens');
+            //跳转到登录界面
+            location.href = '/login.html'
+
+            layer.close(index);
+        });
+    })
 });
 
 
